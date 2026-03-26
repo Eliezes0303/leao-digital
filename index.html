@@ -20,6 +20,13 @@ body::before{content:'';position:absolute;inset:0;background:radial-gradient(ell
 .enter-btn:hover{background:rgba(200,16,46,.08);border-color:#C8102E;padding-left:56px;padding-right:56px;}
 .enter-btn svg{width:14px;height:14px;fill:none;stroke:#C8102E;stroke-width:2;transition:transform .3s;}
 .enter-btn:hover svg{transform:translateX(4px);}
+.pricing-preview{margin-top:48px;padding-top:48px;border-top:1px solid rgba(200,16,46,.2);font-size:12px;color:#999;}
+.pricing-preview h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#C8102E;margin-bottom:24px;font-weight:500;}
+.pricing-items{display:flex;flex-direction:column;gap:16px;}
+.pricing-item{padding:12px 16px;background:rgba(200,16,46,.05);border:1px solid rgba(200,16,46,.15);border-radius:4px;}
+.pricing-item-title{font-weight:500;color:#e8e4df;margin-bottom:4px;}
+.pricing-item-price{font-size:14px;color:#C8102E;font-weight:600;}
+.pricing-item-note{font-size:11px;color:#666;margin-top:4px;}
 .footer-note{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);font-size:9px;letter-spacing:.15em;color:rgba(255,255,255,.12);white-space:nowrap;}
 .line-anim{position:absolute;top:0;left:50%;width:1px;height:120px;background:linear-gradient(rgba(200,16,46,.3),transparent);animation:linePulse 3s ease-in-out infinite;}
 @keyframes linePulse{0%,100%{opacity:.3;height:120px;}50%{opacity:.8;height:80px;}}
@@ -37,7 +44,27 @@ body::before{content:'';position:absolute;inset:0;background:radial-gradient(ell
 	    View Proposal
 	    <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
 	  </a>
-	</div>
+
+	  <div class="pricing-preview">
+	    <h3>Package Pricing</h3>
+	    <div class="pricing-items">
+	      <div class="pricing-item">
+	        <div class="pricing-item-title">Rafael Leão Website</div>
+	        <div class="pricing-item-price">$11,200</div>
+	        <div class="pricing-item-note">Initial Year (Inc. Annual Retainer)</div>
+	      </div>
+	      <div class="pricing-item">
+	        <div class="pricing-item-title">WAY 45 Platform</div>
+	        <div class="pricing-item-price">$11,200</div>
+	        <div class="pricing-item-note">Initial Year (Inc. Annual Retainer)</div>
+	      </div>
+	      <div class="pricing-item" style="border-color:rgba(200,16,46,.35);background:rgba(200,16,46,.1);">
+	        <div class="pricing-item-title">Both Websites (Bundle)</div>
+	        <div class="pricing-item-price">$16,200</div>
+	        <div class="pricing-item-note">Initial Year (Inc. Annual Retainer) — Save $5,000</div>
+	      </div>
+	    </div>
+	  </div>
 
 <div class="footer-note">This document is confidential and intended solely for Rafael Leão and his management team.</div>
 
