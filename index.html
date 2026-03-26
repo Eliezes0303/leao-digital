@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Confidential — Rafael Leão</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+html,body{height:100%;}
+body{background:#080808;color:#e8e4df;font-family:'Inter',sans-serif;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;}
+body::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 40%,rgba(200,16,46,.06),transparent 65%);}
+.container{text-align:center;position:relative;z-index:1;padding:40px 24px;max-width:560px;}
+.badge{font-size:9px;letter-spacing:.4em;text-transform:uppercase;color:rgba(200,16,46,.7);margin-bottom:48px;display:flex;align-items:center;justify-content:center;gap:16px;}
+.badge::before,.badge::after{content:'';width:32px;height:1px;background:rgba(200,16,46,.3);}
+.logo{font-family:'Playfair Display',serif;font-size:clamp(42px,8vw,68px);font-weight:400;line-height:1.1;margin-bottom:12px;}
+.logo em{font-style:italic;color:#C8102E;}
+.subtitle{font-size:13px;color:#666;letter-spacing:.08em;margin-bottom:56px;}
+.enter-btn{display:inline-flex;align-items:center;gap:14px;padding:18px 48px;border:1px solid rgba(200,16,46,.35);font-family:'Inter',sans-serif;font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:#C8102E;text-decoration:none;transition:all .4s;cursor:pointer;background:transparent;}
+.enter-btn:hover{background:rgba(200,16,46,.08);border-color:#C8102E;padding-left:56px;padding-right:56px;}
+.enter-btn svg{width:14px;height:14px;fill:none;stroke:#C8102E;stroke-width:2;transition:transform .3s;}
+.enter-btn:hover svg{transform:translateX(4px);}
+.footer-note{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);font-size:9px;letter-spacing:.15em;color:rgba(255,255,255,.12);white-space:nowrap;}
+.line-anim{position:absolute;top:0;left:50%;width:1px;height:120px;background:linear-gradient(rgba(200,16,46,.3),transparent);animation:linePulse 3s ease-in-out infinite;}
+@keyframes linePulse{0%,100%{opacity:.3;height:120px;}50%{opacity:.8;height:80px;}}
+</style>
+</head>
+<body>
+
+<div class="line-anim"></div>
+
+<div class="container">
+  <div class="badge">Confidential Proposal</div>
+  <h1 class="logo">Rafael <em>Leão</em></h1>
+  <p class="subtitle">Custom Digital Platforms — Business Proposal</p>
+  <a href="proposal/" class="enter-btn">
+    View Proposal
+    <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+  </a>
+</div>
+
+<div class="footer-note">This document is confidential and intended solely for Rafael Leão and his management team.</div>
+
+</body>
+</html>
