@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Business Proposal — Rafael Leão & WAY 45</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#0a0a0a;color:#e8e4df;font-family:'Inter',sans-serif;line-height:1.7;}
+a{color:inherit;text-decoration:none;}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:60px 24px;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 30%,rgba(200,16,46,.08),transparent 70%);}
+.hero-badge{font-size:11px;letter-spacing:.35em;text-transform:uppercase;color:#C8102E;margin-bottom:32px;position:relative;}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(36px,6vw,72px);font-weight:400;line-height:1.15;max-width:800px;margin-bottom:24px;position:relative;}
+.hero h1 em{font-style:italic;color:#C8102E;}
+.hero-sub{font-size:15px;color:#888;max-width:560px;position:relative;margin-bottom:48px;}
+.hero-line{width:1px;height:80px;background:linear-gradient(transparent,#C8102E,transparent);margin:0 auto;position:relative;}
+
+/* SECTION */
+.section{max-width:800px;margin:0 auto;padding:100px 24px;}
+.section-tag{font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:#C8102E;margin-bottom:16px;}
+.section h2{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,44px);font-weight:400;line-height:1.2;margin-bottom:28px;}
+.section p{font-size:15px;color:#999;margin-bottom:18px;}
+.section ul{list-style:none;margin:20px 0 30px;}
+.section ul li{position:relative;padding-left:24px;margin-bottom:14px;font-size:15px;color:#bbb;}
+.section ul li::before{content:'';position:absolute;left:0;top:10px;width:8px;height:8px;border-radius:50%;background:#C8102E;}
+
+/* DEMOS */
+.demos{max-width:900px;margin:0 auto;padding:80px 24px;display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+@media(max-width:700px){.demos{grid-template-columns:1fr;}}
+.demo-card{border:1px solid rgba(255,255,255,.08);padding:40px 32px;text-align:center;transition:border-color .4s,background .4s;}
+.demo-card:hover{border-color:#C8102E;background:rgba(200,16,46,.03);}
+.demo-card h3{font-family:'Playfair Display',serif;font-size:24px;font-weight:400;margin-bottom:8px;}
+.demo-card p{font-size:13px;color:#777;margin-bottom:24px;}
+.demo-btn{display:inline-block;padding:12px 32px;border:1px solid #C8102E;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#C8102E;transition:all .3s;}
+.demo-btn:hover{background:#C8102E;color:#fff;}
+
+/* PRICING */
+.pricing{max-width:900px;margin:0 auto;padding:80px 24px;}
+.pricing-header{text-align:center;margin-bottom:60px;}
+.pricing-header h2{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,44px);font-weight:400;margin-bottom:12px;}
+.pricing-header p{font-size:14px;color:#777;}
+.pricing-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.06);}
+@media(max-width:700px){.pricing-grid{grid-template-columns:1fr;}}
+.price-card{background:#0a0a0a;padding:40px 28px;text-align:center;position:relative;transition:background .3s;}
+.price-card:hover{background:#0e0e0e;}
+.price-card.featured{background:#111;}
+.price-card.featured::after{content:'RECOMMENDED';position:absolute;top:0;left:50%;transform:translateX(-50%);background:#C8102E;color:#fff;font-size:9px;letter-spacing:.2em;padding:4px 14px;}
+.price-label{font-size:10px;letter-spacing:.25em;text-transform:uppercase;color:#888;margin-bottom:16px;}
+.price-amount{font-family:'Playfair Display',serif;font-size:42px;margin-bottom:4px;}
+.price-amount sup{font-size:18px;vertical-align:super;color:#C8102E;}
+.price-note{font-size:12px;color:#555;margin-bottom:24px;}
+.price-features{list-style:none;text-align:left;margin-bottom:28px;}
+.price-features li{font-size:13px;color:#999;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.04);}
+.price-features li::before{content:'✓';color:#C8102E;margin-right:10px;font-weight:700;}
+
+/* NEXT STEPS */
+.next-steps{max-width:800px;margin:0 auto;padding:100px 24px;}
+
+/* FOOTER */
+.footer{text-align:center;padding:60px 24px;border-top:1px solid rgba(255,255,255,.06);}
+.footer p{font-size:12px;color:#555;letter-spacing:.1em;}
+.footer .name{font-family:'Playfair Display',serif;font-size:20px;color:#e8e4df;margin-bottom:8px;}
+
+/* DIVIDER */
+.divider{width:60px;height:1px;background:rgba(200,16,46,.4);margin:40px auto;}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-badge">Confidential Proposal</div>
+  <h1>Custom Digital Platforms for <em>Rafael Leão</em> & <em>WAY 45</em></h1>
+  <p class="hero-sub">Two bespoke, premium websites designed exclusively to elevate your personal brand, engage your global fanbase, and create new opportunities for collaboration.</p>
+  <div class="hero-line"></div>
+</div>
+
+<div class="section">
+  <div class="section-tag">Dear Rafael</div>
+  <p>I hope you are doing well.</p>
+  <p>I am pleased to present a professional proposal for two bespoke digital platforms developed specifically for you:</p>
+  <ul>
+    <li><strong>Rafael Leão Official Website</strong> — A modern online museum dedicated to your football career</li>
+    <li><strong>WAY 45 Official Website</strong> — A dedicated platform for your music project</li>
+  </ul>
+</div>
+
+<div class="section">
+  <div class="section-tag">Project Overview</div>
+  <h2>Beyond Conventional</h2>
+  <p>These websites have been designed as premium, stylish, and highly personal digital experiences that go far beyond conventional athlete or artist websites. They serve as elegant showcases of your journey, achievements, and creative endeavors, while creating new opportunities for fan engagement and brand collaboration.</p>
+</div>
+
+<div class="section">
+  <div class="section-tag">Key Features</div>
+  <h2>Rafael Leão Website</h2>
+  <ul>
+    <li>Comprehensive career narrative including statistics, trophies, match highlights, interviews, and memorable moments with the Portuguese national team</li>
+    <li>Dedicated Adidas partnership section featuring your personalised F50 boots</li>
+    <li>Clean, focused AC Milan section</li>
+    <li>Strategic e-commerce integration: Direct links to the official Adidas and AC Milan online stores — fans can purchase your signature boots, personalised Milan jerseys, and other official merchandise seamlessly</li>
+  </ul>
+  <p>The design is modern, premium, and user-friendly, delivering an immersive experience that strengthens your personal brand while enabling fans to support you directly through official channels.</p>
+</div>
+
+<div class="section" style="text-align:center;">
+  <div class="section-tag">Live Demonstrations</div>
+  <h2>Review the Demos</h2>
+  <p style="margin-bottom:40px;">Fully functional live demos have been prepared for your review. Please explore at your convenience.</p>
+</div>
+
+<div class="demos">
+  <div class="demo-card">
+    <h3>Rafael Leão</h3>
+    <p>Official Website — Football Career</p>
+    <a href="https://eliezes0303.github.io/rafael-leao-websites/rafael-leao/" target="_blank" class="demo-btn">View Demo →</a>
+  </div>
+  <div class="demo-card">
+    <h3>WAY 45</h3>
+    <p>Official Website — Music Project</p>
+    <a href="https://eliezes0303.github.io/rafael-leao-websites/way45/" target="_blank" class="demo-btn">View Demo →</a>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<div class="pricing">
+  <div class="pricing-header">
+    <div class="section-tag" style="margin-bottom:16px;">Investment</div>
+    <h2>Pricing & Packages</h2>
+    <p>Complete, ready-to-deploy solutions tailored exclusively for you.</p>
+  </div>
+  <div class="pricing-grid">
+    <div class="price-card">
+      <div class="price-label">Rafael Leão Website</div>
+      <div class="price-amount"><sup>$</sup>10,000</div>
+      <div class="price-note">One-time</div>
+      <ul class="price-features">
+        <li>Full career showcase</li>
+        <li>Stats, trophies, highlights</li>
+        <li>Adidas partnership section</li>
+        <li>E-commerce integration</li>
+        <li>Premium domain hosting</li>
+        <li>Full ownership & admin access</li>
+      </ul>
+    </div>
+    <div class="price-card featured">
+      <div class="price-label">Both Websites</div>
+      <div class="price-amount"><sup>$</sup>15,000</div>
+      <div class="price-note">Bundle — Save $5,000</div>
+      <ul class="price-features">
+        <li>Rafael Leão + WAY 45</li>
+        <li>All features included</li>
+        <li>Premium domain setup</li>
+        <li>Full ownership & access</li>
+        <li>Launch period support</li>
+        <li>Priority adjustments</li>
+      </ul>
+    </div>
+    <div class="price-card">
+      <div class="price-label">WAY 45 Website</div>
+      <div class="price-amount"><sup>$</sup>10,000</div>
+      <div class="price-note">One-time</div>
+      <ul class="price-features">
+        <li>Music project showcase</li>
+        <li>Discography & streaming</li>
+        <li>Press & interviews</li>
+        <li>Video integration</li>
+        <li>Premium domain hosting</li>
+        <li>Full ownership & admin access</li>
+      </ul>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:40px;">
+    <p style="font-size:14px;color:#888;">Annual Retainer: <strong style="color:#e8e4df;">$1,200/year</strong> for ongoing maintenance, updates & modifications</p>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<div class="next-steps">
+  <div class="section-tag">Next Steps</div>
+  <h2>What Happens Next</h2>
+  <p>Should you find the concepts aligned with your vision, we are prepared to:</p>
+  <ul>
+    <li>Finalize both websites with any adjustments you or your team may require</li>
+    <li>Host the platforms on your preferred premium domains (e.g., rafaelleao.com, way45.com, or similar)</li>
+    <li>Deliver complete ownership and full administrative access to you and your management team</li>
+    <li>Provide ongoing technical support during the initial launch period</li>
+  </ul>
+  <p style="margin-top:30px;">I would welcome the opportunity to discuss your thoughts and any feedback you may have. Please feel free to review the demos at your convenience and share your honest opinion.</p>
+  <p>Thank you for your time and consideration. I am confident you will appreciate the quality, vision, and strategic value of these digital platforms.</p>
+</div>
+
+<div class="divider"></div>
+
+<div class="footer">
+  <div class="name">Best Regards</div>
+  <p>This proposal is confidential and intended solely for Rafael Leão and his management team.</p>
+</div>
+
+</body>
+</html>
